@@ -1,0 +1,126 @@
+{
+  "output": "exports/papa_reel.mp4",
+  "audio": "footage/papa_vo.mp3",
+  "duration": 45.55,
+  "fps": 30,
+  "size": [1080, 1920],
+  "fade_in": 0.8,
+  "fade_out": 0.65,
+
+  "segments": [
+    {"id": "walk", "type": "video", "source": "build/walk_slow.mp4", "src_offset": 0.3, "content": [0, 278, 1080, 1364],
+     "start": 0.0, "end": 2.55, "grade": "golden",
+     "keys": [[0.0, 540, 960, 1080], [1.0, 540, 940, 1000]],
+     "note": "Opening - family walk, slow-mo (0.5x, interpolated) - 'Jony Jony? Yes Papa'"},
+
+    {"id": "img1", "type": "image", "source": "footage/img1.webp",
+     "start": 2.55, "end": 5.6, "grade": "present",
+     "keys": [[0.0, 590, 800, 900], [1.0, 578, 730, 790]],
+     "note": "'Still a child? No Papa' - slow push-in"},
+
+    {"id": "img2", "type": "image", "source": "footage/img2.webp",
+     "start": 5.6, "end": 7.0, "grade": "present",
+     "keys": [[0.0, 600, 640, 720], [1.0, 390, 660, 680]],
+     "note": "'Growing old?' - 7 years ago, pan from bridge to him"},
+
+    {"id": "img3", "type": "image", "source": "footage/img3.webp",
+     "start": 7.0, "end": 8.55, "grade": "present",
+     "keys": [[0.0, 470, 991, 766], [1.0, 470, 1000, 690]],
+     "note": "'...Yes Papa' - today; crop below baked-in 'Ready to learn' text"},
+
+    {"id": "img4", "type": "image", "source": "footage/img4.webp",
+     "start": 8.55, "end": 12.75, "grade": "papa",
+     "keys_abs": [[8.3, 690, 1000, 1125], [10.5, 680, 960, 1030], [10.85, 670, 880, 900], [13.0, 668, 860, 860]],
+     "note": "Papa - 'Ready for it? No Papa' - punch-in on 'No Papa'"},
+
+    {"id": "img5", "type": "image", "source": "footage/img5.webp", "inpaint_green": true,
+     "start": 12.75, "end": 15.7, "grade": "present",
+     "keys": [[0.0, 520, 800, 900], [1.0, 470, 760, 780]],
+     "note": "'Dream big? Yes Papa' - gym; baked-in green text removed"},
+
+    {"id": "img6", "type": "image", "source": "footage/img6.webp",
+     "start": 15.7, "end": 19.45, "grade": "lost",
+     "keys": [[0.0, 960, 1000, 1125], [1.0, 950, 950, 900]],
+     "note": "'Feeling lost? Maybe Papa' - desaturated, slow zoom to face"},
+
+    {"id": "laugh", "type": "video", "source": "build/laugh_slow.mp4", "src_offset": 0.0, "sharpen": true,
+     "start": 19.45, "end": 24.55, "grade": "bright",
+     "keys": [[0.0, 232, 366, 412], [1.0, 232, 356, 386]],
+     "note": "'Laughing loud? Sometimes Papa' - laugh + phone call, slow-mo"},
+
+    {"id": "img7", "type": "image", "source": "footage/img7.webp",
+     "start": 24.55, "end": 29.85, "grade": "nostalgic",
+     "keys": [[0.0, 360, 600, 675], [1.0, 1000, 600, 640]],
+     "note": "'Missing old days? Every day Papa' - pan from Papa to son"},
+
+    {"id": "coach", "type": "video", "source": "build/coach_slow.mp4", "src_offset": 0.0, "sharpen": true,
+     "start": 29.85, "end": 34.95, "grade": "coach",
+     "keys": [[0.0, 232, 416, 464], [1.0, 232, 420, 440]],
+     "note": "'Wish to go back? No Papa' - walking forward, slow-mo"},
+
+    {"id": "old9", "type": "print", "source": "footage/img9.webp", "crop": [30, 10, 1205, 668], "rot": [-1.5, 0.5],
+     "start": 34.95, "end": 37.0, "grade": "vintage",
+     "note": "'Miss it sometimes?' - old print, Papa lifting baby"},
+
+    {"id": "old10", "type": "print", "source": "footage/img10.webp", "crop": [0, 0, 1270, 855], "rot": [1.2, -0.3],
+     "start": 37.0, "end": 38.85, "grade": "vintage",
+     "note": "old print - holding hands in the mountains"},
+
+    {"id": "old11", "type": "print", "source": "footage/img11.webp", "crop": [20, 45, 1200, 790], "rot": [-0.8, 0.8],
+     "start": 38.85, "end": 41.2, "grade": "vintage",
+     "note": "'Maybe Papa' - old print, Papa with baby"},
+
+    {"id": "collage", "type": "collage", "start": 41.2, "end": 45.55, "grade": "vintage",
+     "background": "footage/img8.webp",
+     "cards": [
+       {"source": "footage/img9.webp",  "crop": [30, 10, 1205, 668], "center": [320, 470],  "width": 600, "rot": -8, "delay": 0.0},
+       {"source": "footage/img10.webp", "crop": [0, 0, 1270, 855],   "center": [775, 430],  "width": 540, "rot": 7,  "delay": 0.25},
+       {"source": "footage/img11.webp", "crop": [20, 45, 1200, 790], "center": [740, 1120], "width": 560, "rot": -5, "delay": 0.5},
+       {"source": "footage/img8.webp",  "crop": [60, 40, 1200, 660], "center": [520, 790],  "width": 900, "rot": -2, "delay": 0.9}
+     ],
+     "note": "Last slide - collage, family photo lands last, fade to black"}
+  ],
+
+  "transitions": [
+    {"at": 2.55,  "type": "dissolve", "dur": 0.5},
+    {"at": 5.6,   "type": "dissolve", "dur": 0.4},
+    {"at": 7.0,   "type": "flash",    "dur": 0.3},
+    {"at": 8.55,  "type": "blur",     "dur": 0.5},
+    {"at": 12.75, "type": "blur",     "dur": 0.4},
+    {"at": 15.7,  "type": "dissolve", "dur": 0.5},
+    {"at": 19.45, "type": "dissolve", "dur": 0.4},
+    {"at": 24.55, "type": "blur",     "dur": 0.8},
+    {"at": 29.85, "type": "dissolve", "dur": 0.6},
+    {"at": 34.95, "type": "flash",    "dur": 0.9},
+    {"at": 37.0,  "type": "dissolve", "dur": 0.7},
+    {"at": 38.85, "type": "dissolve", "dur": 0.7},
+    {"at": 41.2,  "type": "dip",      "dur": 0.8}
+  ],
+
+  "texts": [
+    {"text": "Jony Jony?",         "style": "q", "in": 0.40,  "out": 2.45},
+    {"text": "Yes Papa",           "style": "a", "in": 1.20,  "out": 2.45},
+    {"text": "Still a child?",     "style": "q", "in": 2.65,  "out": 5.50},
+    {"text": "No Papa",            "style": "a", "in": 4.35,  "out": 5.50},
+    {"text": "Growing old?",       "style": "q", "in": 5.70,  "out": 8.45},
+    {"text": "Yes Papa",           "style": "a", "in": 6.95,  "out": 8.45},
+    {"text": "7 YEARS AGO",        "style": "label", "in": 5.75, "out": 6.95},
+    {"text": "TODAY",              "style": "label", "in": 7.05, "out": 8.45},
+    {"text": "Ready for it?",      "style": "q", "in": 8.65,  "out": 12.65},
+    {"text": "No Papa",            "style": "a", "in": 10.60, "out": 12.65},
+    {"text": "Dream big?",         "style": "q", "in": 12.85, "out": 15.60},
+    {"text": "Yes Papa",           "style": "a", "in": 13.80, "out": 15.60},
+    {"text": "Feeling lost?",      "style": "q", "in": 15.80, "out": 19.35},
+    {"text": "Maybe Papa",         "style": "a", "in": 17.50, "out": 19.35},
+    {"text": "Laughing loud?",     "style": "q", "in": 19.55, "out": 24.45},
+    {"text": "Sometimes Papa",     "style": "a", "in": 22.05, "out": 24.45},
+    {"text": "Missing old days?",  "style": "q", "in": 24.65, "out": 29.75},
+    {"text": "Every day Papa",     "style": "a", "in": 27.00, "out": 29.75},
+    {"text": "Wish to go back?",   "style": "q", "in": 29.95, "out": 34.85},
+    {"text": "No Papa",            "style": "a", "in": 33.10, "out": 34.85},
+    {"text": "Miss it sometimes?", "style": "q", "in": 35.05, "out": 41.05},
+    {"text": "Maybe Papa",         "style": "a", "in": 38.90, "out": 41.05},
+    {"text": "...maybe",           "style": "a", "in": 41.35, "out": 43.10},
+    {"text": "Love you, Papa",     "style": "end", "in": 43.30, "out": 45.55}
+  ]
+}
