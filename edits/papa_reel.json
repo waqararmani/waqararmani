@@ -36,7 +36,7 @@
     {"id": "img5", "type": "image", "source": "footage/img5.webp", "inpaint_green": true,
      "start": 12.75, "end": 15.7, "grade": "present",
      "keys": [[0.0, 520, 800, 900], [1.0, 470, 760, 780]],
-     "note": "'Dream big? Yes Papa' - gym; baked-in green text removed"},
+     "note": "'Dream big? Yes Papa' - gym; baked-in green text removed and re-set as a styled overlay"},
 
     {"id": "img6", "type": "image", "source": "footage/img6.webp",
      "start": 15.7, "end": 19.45, "grade": "lost",
@@ -110,6 +110,8 @@
     {"text": "No Papa",            "style": "a", "in": 10.60, "out": 12.65},
     {"text": "Dream big?",         "style": "q", "in": 12.85, "out": 15.60},
     {"text": "Yes Papa",           "style": "a", "in": 13.80, "out": 15.60},
+    {"text": "Never thought",      "style": "note", "in": 13.05, "out": 15.60, "y": 300},
+    {"text": "I will open a gym",  "style": "note", "in": 13.35, "out": 15.60, "y": 372},
     {"text": "Feeling lost?",      "style": "q", "in": 15.80, "out": 19.35},
     {"text": "Maybe Papa",         "style": "a", "in": 17.50, "out": 19.35},
     {"text": "Laughing loud?",     "style": "q", "in": 19.55, "out": 24.45},

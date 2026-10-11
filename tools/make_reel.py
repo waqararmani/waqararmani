@@ -284,6 +284,7 @@ class TextLayer:
         "q":     dict(font="CormorantGaramond[wght].ttf", wght=600, size=96, color=(255, 248, 236), y=1300),
         "a":     dict(font="GreatVibes-Regular.ttf", size=118, color=(243, 209, 156), y=1418),
         "label": dict(font="CormorantGaramond[wght].ttf", wght=500, size=40, color=(255, 244, 228), y=330, track=14),
+        "note":  dict(font="PlayfairDisplay-Italic[wght].ttf", wght=500, size=62, color=(255, 246, 232), y=330),
         "end":   dict(font="GreatVibes-Regular.ttf", size=150, color=(246, 216, 166), y=1440),
     }
 
@@ -321,8 +322,9 @@ class TextLayer:
         # premultiplied: shadow (black) under glyph
         self.a = np.clip(glyph + shadow * (1 - glyph), 0, 1)
         self.rgb = glyph[..., None] * col
-        self.x = (W - cw) // 2
-        self.y = int(st["y"] * scale) - ch // 2
+        # per-line "cx"/"y" overrides move a line off baked-in text or faces
+        self.x = int(item.get("cx", W / scale / 2) * scale) - cw // 2
+        self.y = int(item.get("y", st["y"]) * scale) - ch // 2
 
     def apply(self, frame, t):
         it = self.item
