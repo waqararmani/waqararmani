@@ -9,3 +9,6 @@ exports/*
 !footage/.gitkeep
 !transcripts/.gitkeep
 !exports/.gitkeep
+
+# Intermediate render files
+build/
