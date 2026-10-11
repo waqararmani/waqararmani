@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+models/
+
+# Media stays local - never commit footage or renders
+footage/*
+transcripts/*
+exports/*
+!footage/.gitkeep
+!transcripts/.gitkeep
+!exports/.gitkeep
